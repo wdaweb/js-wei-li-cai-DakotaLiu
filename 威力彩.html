@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getLotteryNumbers(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+
+        getLotteryNumbers(1, 38);
+        getLotteryNumbers(1, 9);
+
+        var arr1 = [];
+        for (var i = 0; i <= 5; i++) {
+            arr1.push(getLotteryNumbers(1, 38));
+
+        }
+        var arr2 = [];
+        for (var j = 0; j <= 0; j++) {
+            arr2.push(getLotteryNumbers(1, 9));
+        }
+        document.write(`第一區號碼：${arr1}，第二區號碼：${arr2}`);
+    </script>
+
+</body>
+
+</html>
